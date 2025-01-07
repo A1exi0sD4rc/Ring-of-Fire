@@ -1,0 +1,5 @@
+@mixin dFlex($js: center, $ai: center) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+}
