@@ -10,7 +10,7 @@
 
 .card-stack {
     position: relative;
-    margin-top: 500px;
+    margin-top: 300px;
     >img {
         position: absolute;
         width: 100px;
@@ -32,7 +32,7 @@
 
 .pick-card {
     animation: pick-card-animation 1s ease-in-out;
-    transform: scale(1) translateY(-200px) translateX(-200px) rotate(-10deg);
+    transform: scale(1) translateY(-100px) translateX(-200px) rotate(-10deg);
 }
 
 @keyframes pick-card-animation {
@@ -43,13 +43,13 @@
         transform: scale(1.7);
     }
     100% {
-        transform: scale(1) translateY(-200px) translateX(-200px) rotate(-10deg);
+        transform: scale(1) translateY(-100px) translateX(-200px) rotate(-10deg);
     }
 }
 
 .remove-card {
     animation: remove-card-animation 1s ease-in-out;
-    transform: scale(1) translateX(-196px) translateY(240px) rotate(10deg);
+    transform: scale(1) translateX(-178px) translateY(145px) rotate(10deg);
 }
 
 @keyframes remove-card-animation {
@@ -63,7 +63,7 @@
         transform: scale(1.3) rotate(10deg);
     }
     100% {
-        transform: scale(1) translateX(-196px) translateY(240px) rotate(10deg);
+        transform: scale(1) translateX(-178px) translateY(145px) rotate(10deg);
     }
 }
 
@@ -76,4 +76,13 @@
     position: absolute;
     right: 32px;
     bottom: 32px;
+    background-color: lightgray !important;
+}
+
+.pin-box {
+    position: absolute;
+    bottom: 32px;
+    left: 100px;
+    right: 100px;
+    opacity: 0.8;
 }

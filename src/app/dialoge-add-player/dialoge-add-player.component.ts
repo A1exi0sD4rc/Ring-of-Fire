@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import {
+  MatDialog,
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
@@ -29,9 +30,8 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class DialogeAddPlayerComponent {
   name: string = '';
-  dialogRef = inject(MatDialogRef);
 
-  constructor() {
+  constructor(private dialogRef: MatDialogRef<DialogeAddPlayerComponent>) {
   }
 
   onNoClick(): void {

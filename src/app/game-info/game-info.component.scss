@@ -1,0 +1,8 @@
+.game-info-box {
+    background-color: lightgray !important;
+    >mat-card-header {
+        >h2 {
+            margin: 0;
+        }
+    }
+}
